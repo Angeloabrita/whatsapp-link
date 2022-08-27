@@ -11,7 +11,7 @@ Um gerador de link para o whatsapp com prévia de mensagem.
 
 ## Screenshots
 
-![App Screenshot](https://github.com/Angeloabrita/whatsapp-link/blob/master/../../../../../../screenshot.jpg)
+![App Screenshot](https://github.com/Angeloabrita/whatsapp-link/blob/master/screenshot.jpg)
 
 
 ## Referência
