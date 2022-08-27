@@ -5,20 +5,20 @@ Um gerador de link para o whatsapp com prévia de mensagem.
 
 
 ## Dependencias
-[![5 botstrap](https://img.shields.io/badge/bootstrap-v5-blue)](https://opensource.org/licenses/)
-[![whattszap api](https://img.shields.io/badge/whatsapp-api-blue)](http://www.gnu.org/licenses/agpl-3.0)
-[![whattszap api](https://img.shields.io/badge/qrcode-api-blue)](http://www.gnu.org/licenses/agpl-3.0)
+[![5 botstrap](https://img.shields.io/badge/bootstrap-v5-blue)](https://getbootstrap.com/)
+[![whattszap api](https://img.shields.io/badge/whatsapp-api-blue)](https://developers.facebook.com/docs/whatsapp/)
+[![qrcode api](https://img.shields.io/badge/qrcode-api-blue)](https://goqr.me/api/doc/)
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/Angeloabrita/whatsapp-link/blob/master/../../../../../../screenshot.jpg)
 
 
 ## Referência
 
-- [whatsapp api](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [bootstrap 5](https://github.com/matiassingers/awesome-readme)
- - [qr code api](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+- [whatsapp api](https://developers.facebook.com/docs/whatsapp/)
+ - [bootstrap 5](https://getbootstrap.com/)
+ - [qr code api](https://goqr.me/api/doc/)
 
 ## Funcionalidades
 
@@ -32,7 +32,7 @@ Um gerador de link para o whatsapp com prévia de mensagem.
 ## Instalação
 
 
-Para testar o app acesse esse [LINK](https://choosealicense.com/licenses/mit/)
+Para testar o app acesse esse [https://angeloabrita.github.io/whatsapp-link/](https://angeloabrita.github.io/whatsapp-link/)
 
 Quer fazer auteração e rodar localmente?
 
@@ -49,9 +49,9 @@ inicie o servidor localmente a sua escolha
 - [@Angeloabrita](https://www.github.com/Angeloabrita)
 
 
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherinempeterson.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.facebook.com/agtastudios)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/angelo-gabriel-tavares-abrita/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/agtastudios)
 
 
 ## Licença
