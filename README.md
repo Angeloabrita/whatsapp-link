@@ -51,7 +51,7 @@ inicie o servidor localmente a sua escolha
 
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.facebook.com/agtastudios)
 
-[![github](https://img.shields.io/badge/github?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Angeloabrita)
+[![github](https://img.shields.io/badge/github-169?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Angeloabrita)
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/angelo-gabriel-tavares-abrita/)
 
