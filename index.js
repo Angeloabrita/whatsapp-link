@@ -64,7 +64,7 @@ document.getElementById('btn').addEventListener('click', function(){
    
 
     code.innerHTML = highlight + normal + '<div class="row"><div class="col-6 cod2"></div><div class="col-6 cod2"></div></div>';
-    
+    //after cod2 created get the className
     let code2 = document.getElementsByClassName('cod2');
 
     //create ellement btn copy link
@@ -121,37 +121,39 @@ document.getElementById('btn').addEventListener('click', function(){
     res.appendChild(qr_img);
     res.appendChild(btnCopy3);
 
+    
+
 })
 
-function shorUrl(url) {
-    let request = new Request('https://is.gd/create.php?format=simple&url='+encodeURI(url));
-    return fetch(request, {
-        method: 'POST',
+// function shorUrl(url) {
+//     let request = new Request('https://is.gd/create.php?format=simple&url='+encodeURI(url));
+//     return fetch(request, {
+//         method: 'POST',
        
-        headers: {
-            //'Access-Control-Allow-Origin': '*',
-            'Content-Type': 'text/html',
-            // 'Access-Control-Request-Method': 'POST',
-            // 'Access-Control-Allow-Headers': 'Content-Type',
-            // 'Access-Control-Allow-Credentials': 'true'
-        }
+//         headers: {
+//             //'Access-Control-Allow-Origin': '*',
+//             'Content-Type': 'text/html',
+//             // 'Access-Control-Request-Method': 'POST',
+//             // 'Access-Control-Allow-Headers': 'Content-Type',
+//             // 'Access-Control-Allow-Credentials': 'true'
+//         }
       
-        // body: JSON.stringify()
-    }).then(function (response) {
-        console.log(response);
-        return response.text();
-    }).then(function (data) {
-        console.log(data);
+//         // body: JSON.stringify()
+//     }).then(function (response) {
+//         console.log(response);
+//         return response.text();
+//     }).then(function (data) {
+//         console.log(data);
 
-        return data;
-    }).catch(function (error) {
-        console.log(error);
-    });
+//         return data;
+//     }).catch(function (error) {
+//         console.log(error);
+//     });
     
 
     
     
-}
+// }
 
 //shorUrl('https://www.google.com.br');
 
