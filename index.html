@@ -42,8 +42,7 @@
 </style>
 </head>
 <body>
-    <main class="container text-center">
-        
+    <main class="container text-center pt-4">
         <h1>Gerador de link para Whatsapp</h1>
         <p>Gere links com mensagem personalizada para o Whatsapp e adicione ao seu site, blog ou redes sociais</p>
     </main>
@@ -68,7 +67,7 @@
           aria-label="Close"
         ></button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body text-center">
         <h3>Fui util para você?</h3>
         <p>Siga minhas redes, assim você apoiará meu trabalho</p>
         <div class="cointainer-fluid">
@@ -145,30 +144,30 @@
   </div>
   </div>
 
-  <div class="container">
-
-      <div class="row gx-3 justify-content-center">
+  <div class="container " >
+      <div class="row gx-3 justify-content-center bg-info rounded-3">
+        <div class="row gx-3 p-2 justify-content-center rounded-3">
           <!-- col inputs -->
-          <div class="col-sm-5 bg-light ">
-              <div class="row p-3">
+          <div class="col-sm-5 bg-light rounded-3 ">
+              <div class="row p-3 rounded-3">
                   <label for="number">Insira o numero do telefone com o DDD</label><br>
                   <input type="text" name="number" id="number"><br>
-                  <label for="texto">Insira o texto</label><br>
-                  <textarea name="texto" id="texto"></textarea><br>
+                  <label for="texto">Insira a prévia de um texto</label><br>
+                  <textarea name="texto" id="texto" rows="10"></textarea><br>
                   <button class="btn btn-primary mt-2" id="btn">Gerar link</button>
               </div>
               
           </div>
       
           <!-- col result -->
-          <div class="col-sm-6 bg-success p-3 m-3 text-center">
+          <div class="col-sm-6 bg-success p-3 m-3 text-center rounded-3   ">
               <h2 class="text-white">Seu link aparecerá abaixo</h2>
               <p class="text-white">Copie e e cole no seu site, blog ou redes sociais</p>
-              <div class="row gy-5 justify-content-lg-center">
-                <div class="col-6 d-flex flex-column justify-content-between" id="code">
+              <div class="row gy-5 justify-content-lg-center rounded-3">
+                <div class="col-6 d-flex flex-column justify-content-between rounded-3 " id="code">
                   <!-- add dynamicly tag from  index.js -->
                 </div>
-                <div class="col-6 d-flex flex-column p-2" id="res">
+                <div class="col-6 d-flex flex-column p-2 rounded-3 " id="res">
                     <!-- add dynamicly tag from  index.js -->
                 </div>
 
@@ -177,58 +176,61 @@
           
       </div>
 
-      <footer class=" footer text-center" style="background-color: #f1f1f1;">
+      </div>
       
-        <div class="d-flex justify-content-between">
-  
-            <!-- Copyright -->
-            <div class="text-center text-dark p-3">
-            © 2020 Copyright:
-            <a class="text-dark" href="https://mdbootstrap.com/">AGTA Studios</a>
-          </div>
-          <!-- Copyright -->
-  
-          <section >
-            <!-- Facebook -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="https://www.facebook.com/agtastudios"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-      
-            <!-- Twitter -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="https://twitter.com/agtastudios"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <!-- Linkedin -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="https://www.linkedin.com/in/angelo-gabriel-tavares-abrita/"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <!-- Github -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="https://github.com/Angeloabrita"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-github"></i
-            ></a>
-          </section>
-  
-        </div>
-          
-      </footer>
-  </div>
 
+      
+  </div>
+  <footer class=" footer text-center" style="background-color: #f1f1f1;">
+      
+    <div class="d-flex justify-content-between">
+
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3">
+        © 2020 Copyright:
+        <a class="text-dark" href="https://www.facebook.com/agtastudios">AGTA Studios</a>
+      </div>
+      <!-- Copyright -->
+
+      <section >
+        <!-- Facebook -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://www.facebook.com/agtastudios"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://twitter.com/agtastudios"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <!-- Linkedin -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://www.linkedin.com/in/angelo-gabriel-tavares-abrita/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <!-- Github -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://github.com/Angeloabrita"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+
+    </div>
+      
+  </footer>
     
    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
