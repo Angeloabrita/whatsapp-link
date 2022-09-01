@@ -44,8 +44,22 @@ function copyEvent(id)
         document.execCommand("Copy")
     }
 
-
-
+//convert to base64qrcode this fix donwload bug
+async function getBase64FromUrl(url) {
+    const data = await fetch(url);
+    const blob = await data.blob();
+    return new Promise((resolve) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(blob); 
+      reader.onloadend = () => {
+        const base64data = reader.result;   
+        resolve(base64data);
+      }
+    });
+  }
+  getBase64FromUrl('http://api.qrserver.com/v1/create-qr-code/?data=HelloWorld!&size=100x100').then((res)=>{
+  console.log(res);    
+  return res});
   //event btn generate link
 document.getElementById('btn').addEventListener('click', function(){
     
@@ -64,7 +78,7 @@ document.getElementById('btn').addEventListener('click', function(){
    
 
     code.innerHTML = highlight + normal + '<div class="row"><div class="col-6 cod2"></div><div class="col-6 cod2"></div></div>';
-    
+    //after cod2 created get the className
     let code2 = document.getElementsByClassName('cod2');
 
     //create ellement btn copy link
@@ -102,17 +116,26 @@ document.getElementById('btn').addEventListener('click', function(){
     btnCopy3.setAttribute('id', 'download');
     btnCopy3.setAttribute('role', 'buttom')
     btnCopy3.download = 'qrcode';
-    btnCopy3.setAttribute('href',`http://api.qrserver.com/v1/create-qr-code/?data=${uriLink(numberValidation(number),encodeText(text))}&size=100x100.png`)
+    //push data64 to link for download
+    getBase64FromUrl(`http://api.qrserver.com/v1/create-qr-code/?data=${uriLink(numberValidation(number)+encodeText(text))}&size=100x100.png`).then((res)=>{
+        btnCopy3.setAttribute('href',res);
+    });
+    
     //add evento to btn
     
     btnCopy3.addEventListener('click', function(){
-        alert('Baixado', link);
+        
+        modalHeader.innerHTML='Imagem baixada!'
+        myModal.show();
     });
 
     //create element qrcod img
     let qr_img = document.createElement('img');
     qr_img.classList.add('img-fluid','p-2');
-    qr_img.setAttribute('src', `http://api.qrserver.com/v1/create-qr-code/?data=${uriLink(numberValidation(number),encodeText(text))}&size=100x100.png`);
+    getBase64FromUrl(`http://api.qrserver.com/v1/create-qr-code/?data=${uriLink(numberValidation(number) + encodeText(text))}&size=100x100.png`).then((res)=>{
+        qr_img.setAttribute('src', res);
+    });
+    
     qr_img.setAttribute('id','qcode')
 
     code2[0].appendChild(btnCopy);
@@ -121,40 +144,14 @@ document.getElementById('btn').addEventListener('click', function(){
     res.appendChild(qr_img);
     res.appendChild(btnCopy3);
 
+    
+
 })
 
-function shorUrl(url) {
-    let request = new Request('https://is.gd/create.php?format=simple&url='+encodeURI(url));
-    return fetch(request, {
-        method: 'POST',
-       
-        headers: {
-            //'Access-Control-Allow-Origin': '*',
-            'Content-Type': 'text/html',
-            // 'Access-Control-Request-Method': 'POST',
-            // 'Access-Control-Allow-Headers': 'Content-Type',
-            // 'Access-Control-Allow-Credentials': 'true'
-        }
-      
-        // body: JSON.stringify()
-    }).then(function (response) {
-        console.log(response);
-        return response.text();
-    }).then(function (data) {
-        console.log(data);
-
-        return data;
-    }).catch(function (error) {
-        console.log(error);
-    });
-    
-
-    
-    
-}
 
 //shorUrl('https://www.google.com.br');
 
-
+//REFERENCES FOR LEARNING
+//https://stackoverflow.com/questions/22172604/convert-image-from-url-to-base64
 //https://velhobit.com.br/desenvolvimento/api-do-whatsapp-como-quebrar-linhas-e-passar-parametros-em-links.html
 //https://pt.stackoverflow.com/questions/491477/como-estilizar-texto-dentro-da-tag-code
