@@ -57,9 +57,9 @@ async function getBase64FromUrl(url) {
       }
     });
   }
-  getBase64FromUrl('https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld!&size=100x100').then((res)=>{
-  console.log(res);    
-  return res});
+//   getBase64FromUrl('https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld!&size=100x100').then((res)=>{
+//   console.log(res);    
+//   return res});
   //event btn generate link
 document.getElementById('btn').addEventListener('click', function(){
     
@@ -117,7 +117,7 @@ document.getElementById('btn').addEventListener('click', function(){
     btnCopy3.setAttribute('role', 'buttom')
     btnCopy3.download = 'qrcode';
     //push data64 to link for download
-    getBase64FromUrl(`http://api.qrserver.com/v1/create-qr-code/?data=${uriLink(numberValidation(number)+encodeText(text))}&size=100x100.png`).then((res)=>{
+    getBase64FromUrl(`https://api.qrserver.com/v1/create-qr-code/?data=${uriLink(numberValidation(number)+encodeText(text))}&size=100x100.png`).then((res)=>{
         btnCopy3.setAttribute('href',res);
     });
     
@@ -132,7 +132,7 @@ document.getElementById('btn').addEventListener('click', function(){
     //create element qrcod img
     let qr_img = document.createElement('img');
     qr_img.classList.add('img-fluid','p-2');
-    getBase64FromUrl(`http://api.qrserver.com/v1/create-qr-code/?data=${uriLink(numberValidation(number) + encodeText(text))}&size=100x100.png`).then((res)=>{
+    getBase64FromUrl(`https://api.qrserver.com/v1/create-qr-code/?data=${uriLink(numberValidation(number) + encodeText(text))}&size=100x100.png`).then((res)=>{
         qr_img.setAttribute('src', res);
     });
     
