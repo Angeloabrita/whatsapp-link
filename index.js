@@ -57,7 +57,7 @@ async function getBase64FromUrl(url) {
       }
     });
   }
-  getBase64FromUrl('http://api.qrserver.com/v1/create-qr-code/?data=HelloWorld!&size=100x100').then((res)=>{
+  getBase64FromUrl('https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld!&size=100x100').then((res)=>{
   console.log(res);    
   return res});
   //event btn generate link
